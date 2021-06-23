@@ -1,0 +1,48 @@
+create database empresaf character set utf8;
+use empresaf;
+create table empleado(
+idempleado int,
+nombre varchar(15),
+apellidoP varchar(15),
+apellidoM varchar(15),
+edad int,
+departamento varchar(15),
+cargo varchar(30),
+sueldo double,
+fechaingreso int
+);
+create table libro(
+
+idlibro int,
+nombreLibro varchar(30),
+autor varchar(20),
+editorial varchar(30),
+edicion varchar(30),
+añoPublicacion int,
+categoria varchar(30),
+ejemplares varchar (30)
+);
+
+create table Comida(
+nombreC varchar(30),
+precio double,
+idcomida int,
+tipoCarne varchar(30)
+);
+alter table empleado modify fechaingreso int;
+insert into empleado (idempleado,nombre,apellidoP,apellidoM,edad,departamento,cargo,sueldo,fechaingreso)
+values (1,"gary","pitbul","medel",34,"defensa","comandate",1000000,"1985"); 
+insert into empleado (idempleado,nombre,apellidoP,apellidoM,edad,departamento,cargo,sueldo,fechaingreso)
+values (2,"arturo","king","vidal",34,"medio","guerrero",2000000,"1984");
+insert into empleado (idempleado,nombre,apellidoP,apellidoM,edad,departamento,cargo,sueldo,fechaingreso)
+values (3,"alexis","maravilla","sanchez",32,"punta","wind",2000000,"1986");
+insert into empleado (idempleado,nombre,apellidoP,apellidoM,edad,departamento,cargo,sueldo,fechaingreso)
+values (4,"eugenio","chueco","mea",33,"lateral","izquierdo",1000000,"1984");
+insert into empleado (idempleado,nombre,apellidoP,apellidoM,edad,departamento,cargo,sueldo,fechaingreso)
+values (5,"isla","mauro","isla",34,"lateral","derecho",2000000,"1984");
+insert into libro (idlibro,nombreLibro,autor,editorial,edicion,añoPublicacion,categoria,ejemplares)
+values (1,"odisea","homero","casita",2,"2000","comedia",10);
+insert into libro (idlibro,nombreLibro,autor,editorial,edicion,añoPublicacion,categoria,ejemplares)
+values (2,"harrypotter","jkrowling","ñeñe",1,"1998","fantasia",2);
+insert into libro (idlibro,nombreLibro,autor,editorial,edicion,añoPublicacion,categoria,ejemplares)
+values (3,"el_arte_de_la_guerra","zunshu","honk",20,"1990","belico",20);
